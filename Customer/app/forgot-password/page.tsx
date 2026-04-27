@@ -72,7 +72,7 @@ export default function ForgotPasswordPage() {
             <Button className="w-full" disabled={loading}>{loading ? "Resetting..." : "Reset Password"}</Button>
           </form>
         )}
-        <Link href="/login" className="text-sm font-semibold text-[var(--color-secondary)] hover:underline">
+        <Link href="/login" className="text-sm font-semibold text-(--color-secondary) hover:underline">
           Back to Login
         </Link>
       </div>

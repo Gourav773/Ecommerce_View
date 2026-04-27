@@ -51,7 +51,7 @@ export default function RegisterPage() {
         </Button>
         <p className="text-sm">
           Already have an account?{" "}
-          <Link href="/login" className="font-semibold text-[var(--color-secondary)] hover:underline">
+          <Link href="/login" className="font-semibold text-(--color-secondary) hover:underline">
             Login
           </Link>
         </p>

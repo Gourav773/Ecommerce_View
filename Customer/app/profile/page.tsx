@@ -12,7 +12,7 @@ export default function ProfilePage() {
     return (
       <div className="surface-card p-8 text-center">
         <p className="text-sm text-slate-500">Please login to see profile.</p>
-        <Link href="/login" className="mt-3 inline-block text-sm font-semibold text-[var(--color-secondary)]">
+        <Link href="/login" className="mt-3 inline-block text-sm font-semibold text-(--color-secondary)">
           Go to login
         </Link>
       </div>

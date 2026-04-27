@@ -10,7 +10,8 @@ import type {
   WishlistItem,
 } from "@/types";
 
-export const API_BASE = (process.env.NEXT_PUBLIC_API_BASE || "http://localhost:5000").replace(/\/+$/, "");
+import { API_BASE } from "./apiBase";
+export { API_BASE };
 
 export function getToken(): string | null {
   if (typeof window === "undefined") return null;

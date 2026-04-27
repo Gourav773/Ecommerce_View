@@ -14,7 +14,7 @@ export default function WishlistPage() {
       {!items.length ? (
         <div className="surface-card p-8 text-center">
           <p className="text-sm text-slate-500">No wishlist items yet.</p>
-          <Link href="/products" className="mt-2 inline-block text-sm font-semibold text-[var(--color-secondary)]">
+          <Link href="/products" className="mt-2 inline-block text-sm font-semibold text-(--color-secondary)">
             Browse products
           </Link>
         </div>

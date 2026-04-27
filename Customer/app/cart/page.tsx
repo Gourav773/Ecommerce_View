@@ -36,7 +36,7 @@ export default function CartPage() {
       {!items.length ? (
         <div className="surface-card p-8 text-center">
           <p className="text-sm text-slate-500">Your cart is empty.</p>
-          <Link href="/products" className="mt-3 inline-block text-sm font-semibold text-[var(--color-secondary)]">
+          <Link href="/products" className="mt-3 inline-block text-sm font-semibold text-(--color-secondary)">
             Continue shopping
           </Link>
         </div>
