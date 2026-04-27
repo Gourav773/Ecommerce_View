@@ -11,6 +11,7 @@ import Subcategory from './Admin/Subcategory';
 import Shops from './Admin/Shops';
 import Offers from './Admin/Offers';
 import Charts from './Admin/Charts';
+import Settings from './Admin/Settings';
 import './App.css';
 
 function PrivateRoute({ children }) {
@@ -34,6 +35,7 @@ function App() {
           <Route path="addSubCategory" element={<Subcategory />} />
           <Route path="offers" element={<Offers />} />
           <Route path="shops" element={<Shops />} />
+          <Route path="settings" element={<Settings />} />
         </Route>
       </Routes>
     </BrowserRouter>
