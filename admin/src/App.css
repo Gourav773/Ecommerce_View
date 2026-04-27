@@ -1,0 +1,4 @@
+/* App.css — minimal, layout is handled by Sidebar */
+.App {
+  min-height: 100vh;
+}

@@ -1,0 +1,375 @@
+/* .navbar-header{
+    width: 100vw;
+    height: 40px;
+    padding: 15px 25 px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(79deg,
+    rgb(35, 10, 196) ,rgb(239, 78, 8) , rgb(34, 13, 173));
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.signup_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  background-image: url("https://tse1.mm.bing.net/th/id/OIP.bZ0njstvFYzeZMtEKaH8cgHaEG?rs=1&pid=ImgDetMain&o=7&rm=3");
+  
+    /* background-color: lightblue; */
+/* }
+
+.signup_form{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: whitesmoke;
+}
+
+.signup_form form input{
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 2px;
+    width: 100%;
+    border: 1px solid blue;
+    
+}
+
+.signup_form form button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(13, 14, 74);
+    background-color: blue;
+}
+.signup_form button{
+    background-color: rgb(36, 174, 70);
+    color: white;
+
+} */
+ .navbar-header{
+    width: 100vw;
+    height: 40px;
+    padding: 15px 25px; /* fixed space issue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(79deg,
+    rgb(35, 10, 196) ,rgb(239, 78, 8) , rgb(34, 13, 173));
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.signup_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.bZ0njstvFYzeZMtEKaH8cgHaEG?rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+
+.signup_form{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: whitesmoke;
+}
+
+.signup_form form input{
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 2px;
+    width: 100%;
+    border: 1px solid blue;
+}
+
+.signup_form form button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(13, 14, 74);
+    background-color: blue;
+}
+
+.signup_form button{
+    background-color: rgb(36, 174, 70);
+    color: white;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.btn_input{
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .signup_form {
+        width: 50%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .navbar-header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .link {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .signup_container {
+        padding: 10px;
+    }
+
+    .signup_form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn_input {
+        font-size: 13px;
+        padding: 5px;
+    }
+}
+
+.btn {
+text-decoration: none;
+} 
+
+.btn_input{
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+
+    
+}
+
+.post_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.post_form{
+    width: 50%;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.post_form input, .post_form textarea, .post_form button{
+    width:100%;
+    margin:10px 0px;
+    padding: 8px;
+}
+
+.post_form .file{
+    border: 1px solid gray;
+}
+
+.post_form button{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.post{
+    display: flex;
+    border: 2px solid gray;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.post img {
+    height: 200px;
+}
+
+.post_text{
+    margin-left: 20px;
+}
+.Main{
+    display: flex;
+    flex-direction: column;text-align: center; 
+
+     justify-content: space-evenly;
+  
+}
+  .Main>h1{
+    margin-left: 30px;
+  }
+  
+  
+  
+  
+  
+  .card1{
+    height: 140px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(240, 155, 155, 0.4) 0px 2px 4px, rgba(214, 191, 191, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background: rgb(85, 159, 171);
+    background: linear-gradient(90deg, rgb(103, 100, 156) 0%, rgb(119, 119, 215) 0%, rgba(0,212,255,1) 93%);
+  }
+  .card2{
+    height: 140px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(192, 208, 66, 0.4) 0px 2px 4px, rgba(107, 55, 55, 0.3) 0px 7px 13px -3px, rgba(28, 2, 2, 0.2) 0px -3px 0px inset;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,65,1) 0%, rgba(206,227,191,1) 100%);
+  }
+  .card3{
+    height: 140px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(118, 34, 34, 0.4) 0px 2px 4px, rgba(240, 188, 188, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background: rgb(48, 149, 48);
+    background: linear-gradient(90deg, rgb(50, 46, 124) 0%, rgb(190, 131, 68) 0%, rgba(206,227,191,1) 100%);
+  }
+  .card4{
+    height: 140px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(213, 185, 185, 0.4) 0px 2px 4px, rgba(240, 188, 188, 0.3) 0px 7px 13px -3px, rgba(130, 25, 25, 0.2) 0px -3px 0px inset;
+    background: rgb(140, 218, 140);
+    background: linear-gradient(90deg, rgb(126, 121, 223) 0%, rgb(232, 122, 5) 0%, rgb(95, 195, 23) 100%);
+  }
+  @media screen and (max-width: 1200px){
+    .cards{
+      flex-direction: 'row';
+      
+      
+    }
+    .card1,.card2 ,.card3{
+      width: 500px;
+    }
+  }
+  
+  .card:hover{
+    box-shadow: rgba(243, 238, 238, 0.17) 0px -23px 25px 0px inset, rgba(239, 236, 236, 0.15) 0px -36px 30px 0px inset, rgba(230, 228, 228, 0.1) 0px -79px 40px 0px inset, rgba(240, 234, 234, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  
+  .graph{
+    height: 250px;
+    width: 770px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  }
+  
+  @media screen and (max-width: 1200px){
+    .Main{
+      justify-content: flex-start;
+      margin-top: 60px;
+    }
+    .graph{
+      width: 900px;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    .graph{
+      width: 500px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  .dashboardBox{
+    display: flex;
+    display: flex;
+    margin-left: 30px;
+     gap:20px;
+   
+   
+  }
+  
+  /* .chartColumn{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    gap:100px;
+    /* padding-left: 40px; */
+    /* padding-top: 20px; */
+  
+  
+  /* .chart{
+    height: 250px;
+    width: 380px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(214, 205, 205, 0.4) 0px 2px 4px, rgba(214, 191, 191, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  } */
+  
+  /* @media screen and (max-width: 1200px){
+    .chart{
+      height: 250px;
+      width: 350px;
+  
+    }
+    .chartColumn{
+      gap:100px;
+      margin-top: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    .chart{
+      height: 250px;
+      width: 450px;
+      margin: 5px;
+      margin-bottom: 2px;
+    }
+  } */

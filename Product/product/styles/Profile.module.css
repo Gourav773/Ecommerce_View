@@ -1,0 +1,480 @@
+/* ============ Profile Page - Modern Design ============ */
+
+.wrapper {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* ---- Hero Card (Banner + Avatar + Quick Stats) ---- */
+.heroCard {
+  background: #fff;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.heroBanner {
+  height: 130px;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 40%, #1e1b4b 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.bannerPattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.06) 0%, transparent 40%),
+    radial-gradient(circle at 60% 80%, rgba(255,255,255,0.04) 0%, transparent 50%);
+}
+
+.heroBody {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 0 28px 20px;
+  margin-top: -44px;
+  position: relative;
+  z-index: 1;
+}
+
+.avatarWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), #7c3aed);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25);
+}
+
+.statusDot {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.dotActive {
+  background: var(--success);
+}
+
+.dotPending {
+  background: var(--warning);
+}
+
+.heroInfo {
+  flex: 1;
+  min-width: 0;
+  padding-bottom: 2px;
+}
+
+.heroNameRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.heroName {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.badgeActive {
+  background: var(--success-light);
+  color: #065f46;
+}
+
+.badgePending {
+  background: var(--warning-light);
+  color: #92400e;
+}
+
+.heroShop {
+  margin: 4px 0 0;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.heroEmail {
+  margin: 4px 0 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Quick Stats Row */
+.quickStats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--border-light);
+  padding: 14px 28px;
+  gap: 0;
+}
+
+.quickStat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.quickStatValue {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.quickStatLabel {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.quickStatDivider {
+  width: 1px;
+  height: 32px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+/* ---- Details Grid ---- */
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 16px;
+}
+
+/* ---- Card ---- */
+.card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-xs);
+  padding: 24px;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-primary);
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+/* ---- Info Items ---- */
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+  transition: background 0.15s ease;
+  border-radius: 0;
+}
+
+.infoItem:last-child {
+  border-bottom: none;
+}
+
+.infoItem:hover {
+  background: var(--bg);
+  margin: 0 -12px;
+  padding: 12px;
+  border-radius: var(--radius);
+}
+
+.infoIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--primary-50);
+  color: var(--primary);
+  transition: transform 0.15s ease;
+}
+
+.infoItem:hover .infoIcon {
+  transform: scale(1.05);
+}
+
+/* Accent colors */
+.primary { background: var(--primary-50); color: var(--primary); }
+.success { background: var(--success-light); color: var(--success); }
+.warning { background: var(--warning-light); color: #92400e; }
+.danger { background: var(--danger-light); color: var(--danger); }
+.info { background: var(--info-light); color: var(--info); }
+
+.infoContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.infoLabel {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+.infoValueRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.infoValue {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copyBtn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease, background 0.15s ease;
+  flex-shrink: 0;
+}
+
+.infoItem:hover .copyBtn {
+  opacity: 1;
+}
+
+.copyBtn:hover {
+  color: var(--primary);
+  background: var(--primary-50);
+}
+
+/* ============ Responsive ============ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .heroBody {
+    padding: 0 20px 16px;
+  }
+
+  .quickStats {
+    padding: 12px 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .heroBanner {
+    height: 100px;
+  }
+
+  .heroBody {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 0 16px 16px;
+    margin-top: -36px;
+  }
+
+  .avatar {
+    width: 72px;
+    height: 72px;
+    font-size: 1.5rem;
+  }
+
+  .heroNameRow {
+    justify-content: center;
+  }
+
+  .heroName {
+    font-size: 1.15rem;
+  }
+
+  .heroShop,
+  .heroEmail {
+    font-size: 0.82rem;
+  }
+
+  .quickStats {
+    padding: 10px 12px;
+  }
+
+  .quickStatValue {
+    font-size: 0.85rem;
+  }
+
+  .quickStatLabel {
+    font-size: 0.65rem;
+  }
+
+  .quickStatDivider {
+    height: 24px;
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .heroCard {
+    border-radius: var(--radius-lg);
+    margin-bottom: 14px;
+  }
+
+  .sectionHeader {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+  }
+
+  .infoIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .infoItem {
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .infoItem:hover {
+    margin: 0 -8px;
+    padding: 10px 8px;
+  }
+
+  .infoValue {
+    font-size: 0.85rem;
+  }
+
+  .copyBtn {
+    opacity: 1;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .heroBanner {
+    height: 80px;
+  }
+
+  .heroBody {
+    padding: 0 12px 12px;
+    margin-top: -30px;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 1.25rem;
+    border-width: 3px;
+  }
+
+  .statusDot {
+    width: 14px;
+    height: 14px;
+    border-width: 2px;
+  }
+
+  .heroName {
+    font-size: 1.05rem;
+  }
+
+  .statusBadge {
+    font-size: 0.68rem;
+    padding: 2px 10px;
+  }
+
+  .quickStats {
+    padding: 8px 8px;
+    gap: 0;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .sectionTitle {
+    font-size: 0.92rem;
+  }
+}

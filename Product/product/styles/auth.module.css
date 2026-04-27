@@ -1,0 +1,396 @@
+.authPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4f46e5 0%, #1e1b4b 100%);
+  padding: 20px;
+}
+
+.authCard {
+  background: #fff;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  display: flex;
+  max-width: 920px;
+  width: 100%;
+  overflow: hidden;
+  min-height: 520px;
+}
+
+.authBanner {
+  flex: 1;
+  background: linear-gradient(160deg, var(--primary) 0%, var(--secondary) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 36px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.authBanner::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  top: -80px;
+  right: -80px;
+}
+
+.authBanner::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  bottom: -60px;
+  left: -60px;
+}
+
+.bannerIcon {
+  width: 72px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  backdrop-filter: blur(4px);
+}
+
+.bannerTitle {
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.bannerText {
+  font-size: 0.92rem;
+  opacity: 0.8;
+  line-height: 1.7;
+  max-width: 280px;
+  position: relative;
+}
+
+.bannerFeatures {
+  list-style: none;
+  padding: 0;
+  margin-top: 28px;
+  text-align: left;
+  position: relative;
+}
+
+.bannerFeatures li {
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.85;
+}
+
+.authForm {
+  flex: 1;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.formSubtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.formGroup {
+  margin-bottom: 18px;
+}
+
+.formLabel {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background: #fff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+}
+
+.formInput:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-50);
+}
+
+.formInput::placeholder {
+  color: var(--text-light);
+}
+
+.formSelect {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background: #fff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+  appearance: auto;
+}
+
+.formSelect:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-50);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.formRow3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+
+.rememberRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 0.84rem;
+}
+
+.checkLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.forgotLink {
+  color: var(--primary);
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 0.84rem;
+}
+
+.forgotLink:hover {
+  text-decoration: underline;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.submitBtn:hover {
+  background: var(--primary-dark);
+}
+
+.submitBtn:active {
+  transform: scale(0.98);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.switchText {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.switchLink {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.switchLink:hover {
+  text-decoration: underline;
+}
+
+.registerCard {
+  max-width: 1060px;
+}
+
+.registerBanner {
+  flex: 0 0 320px;
+}
+
+.registerForm {
+  padding: 36px 40px;
+  flex: 1;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.sectionTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 20px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.errorText {
+  color: var(--danger);
+  font-size: 0.78rem;
+  margin-top: 4px;
+}
+
+/* Tablet */
+@media (max-width: 900px) and (min-width: 769px) {
+  .authCard {
+    max-width: 720px;
+  }
+
+  .registerCard {
+    max-width: 800px;
+  }
+
+  .registerBanner {
+    flex: 0 0 240px;
+  }
+
+  .authForm,
+  .registerForm {
+    padding: 32px 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .authCard,
+  .registerCard {
+    flex-direction: column;
+    max-width: 460px;
+  }
+
+  .authBanner,
+  .registerBanner {
+    padding: 28px 20px;
+    min-height: auto;
+    flex: 0 0 auto;
+  }
+
+  .authForm,
+  .registerForm {
+    padding: 24px 20px;
+  }
+
+  .formRow,
+  .formRow3 {
+    grid-template-columns: 1fr;
+  }
+
+  .bannerTitle {
+    font-size: 1.25rem;
+  }
+
+  .bannerFeatures {
+    display: none;
+  }
+
+  .formTitle {
+    font-size: 1.25rem;
+  }
+
+  .formSubtitle {
+    margin-bottom: 24px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .authPage {
+    padding: 10px;
+  }
+
+  .authCard,
+  .registerCard {
+    max-width: 100%;
+    border-radius: var(--radius-lg);
+  }
+
+  .authBanner,
+  .registerBanner {
+    padding: 24px 16px;
+  }
+
+  .bannerIcon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
+  }
+
+  .bannerTitle {
+    font-size: 1.15rem;
+  }
+
+  .authForm,
+  .registerForm {
+    padding: 20px 16px;
+  }
+
+  .formGroup {
+    margin-bottom: 14px;
+  }
+
+  .submitBtn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .sectionTitle {
+    font-size: 0.88rem;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+}

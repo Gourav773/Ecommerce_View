@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #131921;
+  --color-secondary: #232f3e;
+  --color-accent: #ff9900;
+  --color-bg: #f3f3f3;
+  --color-card: #ffffff;
+  --color-text: #0f1111;
+  --color-success: #067d62;
+  --color-error: #b12704;
+  --color-muted: #5f6a79;
+  --shadow-soft: 0 10px 30px rgba(19, 25, 33, 0.08);
+  --shadow-card: 0 8px 22px rgba(19, 25, 33, 0.12);
+  --radius-xl: 1rem;
+}
+
+[data-theme="dark"] {
+  --color-primary: #0f1720;
+  --color-secondary: #192433;
+  --color-accent: #ffae34;
+  --color-bg: #0d1117;
+  --color-card: #131b23;
+  --color-text: #eff3f5;
+  --color-muted: #9da8b5;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 8px 22px rgba(0, 0, 0, 0.34);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Poppins, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top right, #ffdca4 0%, transparent 34%), var(--color-bg);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins, Inter, "Segoe UI", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.surface-card {
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+}
+
+.accent-gradient {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

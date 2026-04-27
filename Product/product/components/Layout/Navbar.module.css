@@ -1,0 +1,277 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  height: var(--navbar-height);
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  z-index: 900;
+  gap: 16px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  transition: background 0.15s ease;
+}
+
+.menuBtn:hover {
+  background: var(--border-light);
+}
+
+.pageTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.searchBar {
+  flex: 1;
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 14px;
+  color: var(--text-muted);
+  margin: 0 auto;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.searchInput::placeholder {
+  color: var(--text-light);
+}
+
+/* Mobile search toggle button - hidden on desktop */
+.mobileSearchBtn {
+  display: none;
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  align-items: center;
+  transition: background 0.15s ease;
+}
+
+.mobileSearchBtn:hover {
+  background: var(--border-light);
+}
+
+/* Full-width mobile search bar */
+.mobileSearchBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  color: var(--text-muted);
+}
+
+.mobileSearchClose {
+  background: none;
+  border: none;
+  padding: 4px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.iconBtn {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  transition: background 0.15s ease;
+}
+
+.iconBtn:hover {
+  background: var(--border-light);
+}
+
+.notifDot {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  background: var(--danger);
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.userPill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 12px 5px 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  border: 1px solid var(--border);
+}
+
+.userPill:hover {
+  background: var(--border-light);
+}
+
+.userAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--primary-50);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.userMeta {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.userRole {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .searchBar {
+    max-width: 200px;
+  }
+
+  .userMeta {
+    display: none;
+  }
+
+  .userPill {
+    padding: 4px;
+    border-radius: 50%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 12px;
+    height: 56px;
+    gap: 8px;
+  }
+
+  .searchBar {
+    display: none;
+  }
+
+  .mobileSearchBtn {
+    display: flex;
+  }
+
+  .pageTitle {
+    font-size: 0.95rem;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .left {
+    gap: 8px;
+  }
+
+  .right {
+    gap: 6px;
+  }
+
+  .menuBtn {
+    padding: 6px;
+  }
+
+  .iconBtn {
+    padding: 6px;
+  }
+
+  .userPill {
+    padding: 4px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .userAvatar {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+  }
+
+  .userMeta {
+    display: none;
+  }
+
+  .notifDot {
+    top: 5px;
+    right: 5px;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 380px) {
+  .navbar {
+    padding: 0 8px;
+  }
+
+  .pageTitle {
+    font-size: 0.88rem;
+    max-width: 100px;
+  }
+}
